@@ -1,0 +1,81 @@
+body {
+    font-family: "Times New Roman", Times, serif; 
+    font-size: 16px; 
+    margin: 0;
+    padding: 0;
+    background-color: #100000; 
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto; 
+    padding: 20px;
+    background-color: #bacdd1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-wrapper {
+    margin: 25 auto; 
+    text-align: center; 
+}
+
+h1 {
+    margin-bottom: 50px;
+    font-size: 85px; 
+    font-style: italic; 
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.anova-btn {
+    display: inline-block;
+    background-color: #4554a0;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 40px; 
+    text-decoration: none;
+    margin: 30px;
+    transition: background-color 0.5s;
+}
+
+.anova-btn:hover {
+    background-color: #333366; 
+}
+
+.gif-container {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.gif {
+    max-width: 70rem;
+    height: 20rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #e2e2e2;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    z-index: 999;
+}
+
+@media (max-width: 600px) {
+    footer {
+        position: fixed;
+    }
+}
+
+
