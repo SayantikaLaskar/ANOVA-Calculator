@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 100%; /* Adjusted to fit the full width of the screen */
     margin: 20px auto; 
     padding: 20px;
     background-color: #bacdd1;
@@ -15,13 +15,13 @@ body {
 }
 
 .content-wrapper {
-    margin: 25 auto; 
+    margin: 25px auto; /* Adjusted for better spacing */
     text-align: center; 
 }
 
 h1 {
-    margin-bottom: 50px;
-    font-size: 85px; 
+    margin-bottom: 30px; /* Reduced margin for better spacing */
+    font-size: 50px; /* Reduced font size for better readability on small screens */
     font-style: italic; 
 }
 
@@ -39,9 +39,9 @@ h1 {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    font-size: 40px; 
+    font-size: 30px; /* Reduced font size for better readability on small screens */
     text-decoration: none;
-    margin: 30px;
+    margin: 15px; /* Reduced margin for better spacing */
     transition: background-color 0.5s;
 }
 
@@ -51,16 +51,16 @@ h1 {
 
 .gif-container {
     text-align: center;
-    margin-top: 25px;
+    margin-top: 15px; /* Reduced margin for better spacing */
 }
 
 .gif {
-    max-width: 70rem;
-    height: 20rem;
+    max-width: 90%; /* Adjusted to fit the width of the screen */
+    height: auto; /* Automatically adjust height to maintain aspect ratio */
 }
 
 footer {
-    position: absolute;
+    position: fixed; /* Fixed position to always appear at the bottom */
     bottom: 0;
     left: 0;
     width: 100%;
@@ -72,10 +72,13 @@ footer {
     z-index: 999;
 }
 
-@media (max-width: 600px) {
+@media (min-width: 601px) {
+    /* Styles for screens larger than 600px width */
+    .container {
+        max-width: 800px;
+    }
+
     footer {
-        position: fixed;
+        position: absolute; /* Revert to absolute position for larger screens */
     }
 }
-
-
